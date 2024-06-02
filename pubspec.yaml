@@ -40,6 +40,8 @@ dependencies:
   firebase_auth: ^4.19.6
   http: ^1.2.1
   flutter_riverpod: ^2.5.1
+  url_launcher: ^6.2.6
+  shared_preferences: ^2.2.3
   
   
 dev_dependencies:

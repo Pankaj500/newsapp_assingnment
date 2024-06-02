@@ -13,7 +13,7 @@ class SignIn extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final height = MediaQuery.of(context).size.height;
+    //final height = MediaQuery.of(context).size.height;
     final width = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
@@ -50,7 +50,7 @@ class SignIn extends ConsumerWidget {
                       .then((value) async {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) => HomePage()));
-                    await _headlinesApiRepo.getheadlines(ref);
+                    await _headlinesApiRepo.getheadlines(ref, context);
                     print(see.length);
                   });
                 },
